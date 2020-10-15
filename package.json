@@ -1,0 +1,18 @@
+{
+    "name": "The Board",
+    "version": "0.1.0",
+    "description": "A message board based on sticky notes",
+    "main": "server.js",
+    "author": {
+        "name": "Wasim",
+        "email": ""
+    },
+    "dependencies": {
+        "ejs": "^3.1.5",
+        "ejs-locals": "^1.0.2",
+        "express": "^4.17.1",
+        "jade": "^1.11.0",
+        "underscore": "^1.11.0",
+        "vash": "^0.13.0"
+    }
+}
