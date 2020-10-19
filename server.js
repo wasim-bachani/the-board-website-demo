@@ -3,12 +3,20 @@ var express = require("express");
 var app = express();
 // var ejsEngine = require("ejs-locals");
 var controllers = require("./controllers");
+var flash = require("connect-flash");
 
 //set view engine
 // app.set("view engine","jade"); // jade view engine
 // app.engine("ejs", ejsEngine); //support master pages
 // app.set("view engine", "ejs"); //ejs view engine
 app.set("view engine","vash"); //vash view engine
+
+//Opt into services
+var cookieParser = require('cookieparser');
+var session = require('express-session')
+app.use(session({secret: "theBoard"}));
+app.use(flash());
+app.use(express.urlencoded());
 
 
 //set the public static resource folder
