@@ -13,10 +13,13 @@ app.set("view engine","vash"); //vash view engine
 
 //Opt into services
 var cookieParser = require('cookieparser');
-var session = require('express-session')
+var session = require('express-session');
+var bodyParser = require('body-parser');
 app.use(session({secret: "theBoard"}));
 app.use(flash());
+app.use(bodyParser.json());
 app.use(express.urlencoded());
+
 
 
 //set the public static resource folder

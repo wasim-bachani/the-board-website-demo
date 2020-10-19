@@ -1,9 +1,11 @@
 (function (controllers) {
 
-    var homeControllers = require("./homeController");
+    var homeController = require("./homeController");
+    var notesController = require("./notesController");
 
     controllers.init = function (app) {
-        homeControllers.init(app);
+        homeController.init(app);
+        notesController.init(app);
     };
-    
+
 })(module.exports);
