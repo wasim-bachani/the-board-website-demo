@@ -9,7 +9,7 @@
             data.getNoteCategories(function (err, results) {
                 res.render("index", 
                 {
-                title: "The Board!", 
+                title: "The Sticky Board", 
                 error: err, 
                 categories: results,
                 newCatError: req.flash("newCatName")
