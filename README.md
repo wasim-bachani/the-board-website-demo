@@ -1,6 +1,9 @@
 # the-board-website-demo
+A board to manage sticky notes
 
-Run using npm:
+# Run
 npm install
-node server.js
+npm start
 
+# Database:
+MongoDB

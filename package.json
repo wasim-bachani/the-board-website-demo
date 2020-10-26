@@ -1,11 +1,10 @@
 {
-    "name": "The Board",
+    "name": "the-sticky-board",
     "version": "0.1.0",
     "description": "A message board based on sticky notes",
     "main": "server.js",
     "author": {
-        "name": "Wasim",
-        "email": ""
+        "name": "Wasim"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
@@ -23,5 +22,8 @@
     "devDependencies": {
         "grunt": "^1.3.0",
         "grunt-nodemon": "^0.4.2"
+    },
+    "scripts": {
+        "start": "node server.js"
     }
 }
